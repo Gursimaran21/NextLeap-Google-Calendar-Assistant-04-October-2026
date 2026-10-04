@@ -179,7 +179,7 @@ Imported workflows carry node *references*, not secrets — you must attach your
 
 ### Step 3 — Update the recipient email
 
-The committed workflow was exported with a placeholder recipient. Update it in two places:
+The workflow ships **scrubbed** — no credentials, no real email addresses, no instance URLs. It currently contains the placeholder `you@example.com`. Replace it in two places:
 
 - **AI Agent → Prompt** — the email address written into the instruction.
 - **Google Calendar node → Calendar** — the calendar to read (must be an email you own or can read).
